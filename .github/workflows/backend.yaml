@@ -1,0 +1,24 @@
+name: Backend  workflow
+
+on:
+  pull_request:
+    branches:
+      - dev/backend
+  
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Use Node.js 17.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 17.x
+    - name: Install Dependencies
+      run: npm install
+  
+    - name: Run Tests
+      run: npm run test

@@ -1,0 +1,35 @@
+{
+  "name": "actions-heroku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc-watch --onsuccess \"node outDir/index.js\"",
+    "postinstall": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andregail/actions-heroku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andregail/actions-heroku/issues"
+  },
+  "homepage": "https://github.com/andregail/actions-heroku#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.18",
+    "jest": "^27.5.1",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "ts-jest": "^27.1.3",
+    "tsc-watch": "^4.6.0"
+  }
+}

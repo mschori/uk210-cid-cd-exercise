@@ -1,0 +1,1 @@
+web: node ./outDir/index.js
