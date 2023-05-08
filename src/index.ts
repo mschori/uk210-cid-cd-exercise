@@ -1,5 +1,5 @@
 import path from 'path'
-import { sum } from './sum'
+import {sum} from './sum'
 
 // create an express app
 const express = require("express")
@@ -13,9 +13,9 @@ app.use(express.static(path.resolve(__dirname, "../client/build")))
 //})
 
 // start the server listening for requests
-app.listen(process.env.PORT || 3000, 
-	() => {
-		console.log("Server is running...")
-		console.log(sum(10, 5))
-	}
-	);
+app.listen(process.env.PORT || 3000,
+    () => {
+        console.log("Server is running...")
+        console.log(sum(10, 5))
+    }
+);
