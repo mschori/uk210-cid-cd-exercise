@@ -16,6 +16,6 @@ app.use(express.static(path.resolve(__dirname, "../client/build")))
 app.listen(process.env.PORT || 3000,
     () => {
         console.log("Server is running...")
-        console.log(sum(10, 5))
+        console.log(sum(12, 8))
     }
 );
